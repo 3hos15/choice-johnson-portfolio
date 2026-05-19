@@ -41,3 +41,10 @@ const palettes = [
   const root = document.documentElement;
   paletteKeys.forEach((key, i) => root.style.setProperty(key, palette[i]));
   
+
+const currentPage = window.location.pathname.split('/').pop();
+  document.querySelectorAll('.nav-link').forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('nav-link--active');
+    }
+});

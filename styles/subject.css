@@ -93,6 +93,12 @@ a {
   color: var(--color-text);
 }
 
+
+.nav-link--active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 #nav-hamburger {
   display: none;
   font-size: 18px;
