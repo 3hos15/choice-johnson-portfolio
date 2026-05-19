@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choice Johnson Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/png" href="images/starcj.png">
+</head>
+<body>
+  <input type="checkbox" id="toggle-order" hidden>
+
+  <div id="bg-text" aria-hidden="true">
+    <h1 id="bg-name">Choice Johnson :)</h1>
+  </div>
+
+  <div id="ordered-view">
+    <nav id="ordered-nav">
+      <span id="ordered-logo">Choice Johnson :)</span>
+      <a class="olink" href="contact.html">Contact →</a>
+    </nav>
+    <div id="ordered-body">
+      <div id="ordered-content">
+        <h2 id="ordered-heading">I'm Choice<br>This is my portfolio :)</h2>
+        <div id="ordered-grid">
+          <a class="ordered-item" href="subjects.html">
+            <div class="ordered-item-name">Projects</div>
+            <div class="ordered-item-sub">Frontend & UX</div>
+          </a>
+          <a class="ordered-item" href="visual.html">
+            <div class="ordered-item-name">Visual</div>
+            <div class="ordered-item-sub">Film & photography</div>
+          </a>
+          <a class="ordered-item" href="aboutme.html">
+            <div class="ordered-item-name">About me</div>
+            <div class="ordered-item-sub">Who is Choice?</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- page popups -->
+
+  <div popover="manual" id="win-projects" class="win deco">
+    <div class="win-bar">
+      <span class="win-title">PROJECTS</span>
+      <button class="win-x" popovertarget="win-projects" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">Projects</p>
+      <p class="win-sub">Frontend & UX</p>
+      <p class="win-msg">The work. The craft. The "why isn't this centered" at 1am.</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="projects.html">Open Projects →</a>
+        <button class="wbtn" popovertarget="win-projects" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="win-visual" class="win deco">
+    <div class="win-bar">
+      <span class="win-title">VISUAL</span>
+      <button class="win-x" popovertarget="win-visual" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">Visual</p>
+      <p class="win-sub">Film & photography</p>
+      <p class="win-msg">Not everything needs a component. Sometimes it just needs a good lens.</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="visual.html">Open Visual →</a>
+        <button class="wbtn" popovertarget="win-visual" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="win-about" class="win deco">
+    <div class="win-bar">
+      <span class="win-title">ABOUT ME</span>
+      <button class="win-x" popovertarget="win-about" popovertargetaction="hide" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="win-body">
+      <p class="win-subject">About me</p>
+      <p class="win-sub">Who is Choice?</p>
+      <p class="win-msg">CMD Amsterdam. Cum Laude. Currently figuring out what's next.</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="aboutme.html">Open About →</a>
+        <button class="wbtn" popovertarget="win-about" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-1" class="win deco">
+    <div class="win-bar"><span class="win-title">VISITOR DETECTED</span><button class="win-x" popovertarget="deco-1" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">Welcome. You've loaded a portfolio. Please don't leave.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-1" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-2" class="win deco">
+    <div class="win-bar"><span class="win-title">WARNING — MULTIPLE TABS OPEN</span><button class="win-x" popovertarget="deco-2" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">You have 12 other portfolios open. This one is better. Close the rest.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-2" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-3" class="win deco">
+    <div class="win-bar"><span class="win-title">SYSTEM — GIT CONFLICT</span><button class="win-x" popovertarget="deco-3" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">Merge conflict on main. Cause: unknown. Solution: cry, then push anyway.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-3" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-4" class="win deco">
+    <div class="win-bar"><span class="win-title">NOTICE — HAND CODED</span><button class="win-x" popovertarget="deco-4" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">This site was hand-coded. No templates were harmed in the process.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-4" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-5" class="win deco">
+    <div class="win-bar"><span class="win-title">UPDATE AVAILABLE — CHOICE V2</span><button class="win-x" popovertarget="deco-5" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">A newer version of Choice is currently in development. ETA: unknown. Coffee dependent.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-5" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-6" class="win deco">
+    <div class="win-bar"><span class="win-title">REMINDER — YOU SCROLLED PAST IT</span><button class="win-x" popovertarget="deco-6" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">That project you just skipped? That's the good one... Go back.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-6" popovertargetaction="hide">Noted</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-7" class="win deco">
+    <div class="win-bar"><span class="win-title">STATUS — AVAILABLE FOR WORK</span><button class="win-x" popovertarget="deco-7" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">Currently open to internships. I'm Amsterdam based.</p>
+      <div class="win-btns">
+        <a class="wbtn primary" href="contact.html">Get in touch →</a>
+        <button class="wbtn" popovertarget="deco-7" popovertargetaction="hide">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-8" class="win deco">
+    <div class="win-bar"><span class="win-title">NOTICE</span><button class="win-x" popovertarget="deco-8" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">These windows are built with the Popover API.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-8" popovertargetaction="hide">Impressive</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-9" class="win deco">
+    <div class="win-bar"><span class="win-title">ERROR — CONCEPT UNDEFINED</span><button class="win-x" popovertarget="deco-9" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">Started with an idea. Scrapped it. Started over. Now it's better. Probably.</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-9" popovertargetaction="hide">Relatable</button></div>
+    </div>
+  </div>
+
+  <div popover="manual" id="deco-10" class="win deco">
+    <div class="win-bar"><span class="win-title">ALERT — COLORBURST</span><button class="win-x" popovertarget="deco-10" popovertargetaction="hide" aria-label="Close">&#x2715;</button></div>
+    <div class="win-body">
+      <p class="win-msg">This portfolio has a randomized color theme on every refresh. What theme are you seeing now?</p>
+      <div class="win-btns"><button class="wbtn" popovertarget="deco-10" popovertargetaction="hide">Dismiss</button></div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <label class="ctrl-btn" for="toggle-order" id="order-label"></label>
+  </div>
+
+  <script src="script/main.js"></script>
+  <script src="script/palette.js"></script>
+</body>
+</html>
