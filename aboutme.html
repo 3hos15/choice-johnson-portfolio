@@ -3,35 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Choice Johnson Visual</title>
+  <title>Choice Johnson — About</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/global.css">
   <link rel="icon" type="image/png" href="images/starcj.png">
 </head>
 <body>
-    <input type="checkbox" id="nav-toggle" hidden>
+  <input type="checkbox" id="nav-toggle" hidden>
 
-    <nav id="nav">
+  <nav id="nav">
     <a class="nav-logo" href="index.html">Choice Johnson :)</a>
     <div id="nav-links">
-        <a class="nav-link" href="subjects.html">Projects</a>
-        <a class="nav-link" href="visual.html">Visual</a>
-        <a class="nav-link" href="aboutme.html">About me</a>
-        <a class="nav-link" href="contact.html">Contact →</a>
+      <a class="nav-link" href="subjects.html">Projects</a>
+      <a class="nav-link" href="visual.html">Visual</a>
+      <a class="nav-link nav-link--active" href="aboutme.html">About me</a>
+      <a class="nav-link" href="contact.html">Contact →</a>
     </div>
     <label for="nav-toggle" id="nav-hamburger" aria-label="Toggle menu"></label>
-    </nav>
+  </nav>
 
-    <div id="nav-mobile">
-        <a class="nav-mobile-link" href="subjects.html">Projects</a>
-        <a class="nav-mobile-link" href="visual.html">Visual</a>
-        <a class="nav-mobile-link" href="aboutme.html">About me</a>
-        <a class="nav-mobile-link" href="contact.html">Contact →</a>
+  <div id="nav-mobile">
+    <a class="nav-mobile-link" href="subjects.html">Projects</a>
+    <a class="nav-mobile-link" href="visual.html">Visual</a>
+    <a class="nav-mobile-link" href="aboutme.html">About me</a>
+    <a class="nav-mobile-link" href="contact.html">Contact →</a>
+  </div>
+
+  <main id="about">
+
+    <div id="about-intro">
+      <div id="about-label">About me</div>
+      <h1 id="about-name">Choice<br><em>Johnson</em></h1>
+      <p id="about-tag">CMD Amsterdam &nbsp;·&nbsp; Frontend & UX &nbsp;·&nbsp; Amsterdam</p>
     </div>
 
-  <script src="script/palette.js"></script>
+    <div id="about-grid">
 
+      <div id="about-image-wrap">
+        <div id="about-image">
+          <img src="images/choicejohnson.jpeg" alt="Photo of Choice Johnson">
+        </div>
+      </div>
+
+      <div id="about-content">
+
+        <section class="about-block">
+          <span class="about-block-label">Who</span>
+          <p class="about-block-text">Hi there! I'm Choice Johnson, 22 years old and currently studying Communication & Multimedia Design at the University of Applied Sciences in Amsterdam. I've explored various paths in my studies, but CMD Amsterdam is where I found my place, and my Cum Laude in the first year reflects how much that clicked.</p>
+        </section>
+
+        <section class="about-block">
+          <span class="about-block-label">Background</span>
+          <p class="about-block-text">Before CMD, I did internships at large corporations during previous studies gave me hands on experience and taught me lessons I still carry. That groundlevel exposure shaped how I think about design and development. Practically, not just theoretically.</p>
+        </section>
+
+        <section class="about-block">
+          <span class="about-block-label">Besides</span>
+          <p class="about-block-text">Alongside studying fulltime, I work as a speciality coffee barista. It keeps me grounded. Meeting people, being present, helping in a small but real way.</p>
+        </section>
+
+        <section class="about-block">
+          <span class="about-block-label">Connect</span>
+          <div class="about-links">
+            <a class="about-link" href="mailto:choice.johnson@hotmail.com">
+              <span class="about-link-label">E-mail</span>
+              <span class="about-link-value">choice.johnson@hotmail.com →</span>
+            </a>
+            <a class="about-link" href="https://www.linkedin.com/in/choice-johnson-191104305/" target="_blank" rel="noopener">
+              <span class="about-link-label">LinkedIn</span>
+              <span class="about-link-value">Choice Johnson →</span>
+            </a>
+            <a class="about-link" href="https://github.com/3hos15" target="_blank" rel="noopener">
+              <span class="about-link-label">GitHub</span>
+              <span class="about-link-value">3hos15 →</span>
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script/palette.js"></script>
 </body>
 </html>

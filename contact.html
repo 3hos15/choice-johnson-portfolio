@@ -3,35 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Choice Johnson Visual</title>
+  <title>Choice Johnson — Contact</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/global.css">
   <link rel="icon" type="image/png" href="images/starcj.png">
 </head>
 <body>
-    <input type="checkbox" id="nav-toggle" hidden>
+  <input type="checkbox" id="nav-toggle" hidden>
 
-    <nav id="nav">
+  <nav id="nav">
     <a class="nav-logo" href="index.html">Choice Johnson :)</a>
     <div id="nav-links">
-        <a class="nav-link" href="subjects.html">Projects</a>
-        <a class="nav-link" href="visual.html">Visual</a>
-        <a class="nav-link" href="aboutme.html">About me</a>
-        <a class="nav-link" href="contact.html">Contact →</a>
+      <a class="nav-link" href="subjects.html">Projects</a>
+      <a class="nav-link" href="visual.html">Visual</a>
+      <a class="nav-link" href="aboutme.html">About me</a>
+      <a class="nav-link nav-link--active" href="contact.html">Contact →</a>
     </div>
     <label for="nav-toggle" id="nav-hamburger" aria-label="Toggle menu"></label>
-    </nav>
+  </nav>
 
-    <div id="nav-mobile">
-        <a class="nav-mobile-link" href="subjects.html">Projects</a>
-        <a class="nav-mobile-link" href="visual.html">Visual</a>
-        <a class="nav-mobile-link" href="aboutme.html">About me</a>
-        <a class="nav-mobile-link" href="contact.html">Contact →</a>
+  <div id="nav-mobile">
+    <a class="nav-mobile-link" href="subjects.html">Projects</a>
+    <a class="nav-mobile-link" href="visual.html">Visual</a>
+    <a class="nav-mobile-link" href="aboutme.html">About me</a>
+    <a class="nav-mobile-link" href="contact.html">Contact →</a>
+  </div>
+
+  <main id="contact">
+
+    <div id="contact-intro">
+      <p id="contact-label">Contact</p>
+      <h1 id="contact-heading">Let's talk<em>!</em></h1>
+      <p id="contact-sub">Currently open to internship opportunities.</p>
     </div>
 
-  <script src="script/palette.js"></script>
+    <div id="contact-links">
+      <a class="contact-link" href="mailto:choice.johnson@hotmail.com">
+        <span class="contact-link-label">E-mail</span>
+        <span class="contact-link-value">choice.johnson@hotmail.com</span>
+        <span class="contact-link-arrow">→</span>
+      </a>
+      <a class="contact-link" href="https://www.linkedin.com/in/choice-johnson-191104305/" target="_blank" rel="noopener">
+        <span class="contact-link-label">LinkedIn</span>
+        <span class="contact-link-value">Choice Johnson</span>
+        <span class="contact-link-arrow">→</span>
+      </a>
+      <a class="contact-link" href="https://github.com/3hos15" target="_blank" rel="noopener">
+        <span class="contact-link-label">GitHub</span>
+        <span class="contact-link-value">3hos15</span>
+        <span class="contact-link-arrow">→</span>
+      </a>
+    </div>
 
+  </main>
+
+  <script src="script/palette.js"></script>
 </body>
 </html>

@@ -3,35 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Choice Johnson Visual</title>
+  <title>Choice Johnson — Visual</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/visual.css">
+  <link rel="stylesheet" href="styles/global.css">
   <link rel="icon" type="image/png" href="images/starcj.png">
 </head>
 <body>
-    <input type="checkbox" id="nav-toggle" hidden>
+  <input type="checkbox" id="nav-toggle" hidden>
 
-    <nav id="nav">
+  <nav id="nav">
     <a class="nav-logo" href="index.html">Choice Johnson :)</a>
     <div id="nav-links">
-        <a class="nav-link" href="subjects.html">Projects</a>
-        <a class="nav-link" href="visual.html">Visual</a>
-        <a class="nav-link" href="aboutme.html">About me</a>
-        <a class="nav-link" href="contact.html">Contact →</a>
+      <a class="nav-link" href="subjects.html">Projects</a>
+      <a class="nav-link nav-link--active" href="visual.html">Visual</a>
+      <a class="nav-link" href="aboutme.html">About me</a>
+      <a class="nav-link" href="contact.html">Contact →</a>
     </div>
     <label for="nav-toggle" id="nav-hamburger" aria-label="Toggle menu"></label>
-    </nav>
+  </nav>
 
-    <div id="nav-mobile">
-        <a class="nav-mobile-link" href="subjects.html">Projects</a>
-        <a class="nav-mobile-link" href="visual.html">Visual</a>
-        <a class="nav-mobile-link" href="aboutme.html">About me</a>
-        <a class="nav-mobile-link" href="contact.html">Contact →</a>
-    </div>
+  <div id="nav-mobile">
+    <a class="nav-mobile-link" href="subjects.html">Projects</a>
+    <a class="nav-mobile-link" href="visual.html">Visual</a>
+    <a class="nav-mobile-link" href="aboutme.html">About me</a>
+    <a class="nav-mobile-link" href="contact.html">Contact →</a>
+  </div>
 
+  <main id="visual">
+
+    <section id="amfi">
+      <div id="amfi-inner">
+
+        <div id="amfi-header">
+          <p id="amfi-label">Photography — AMFI</p>
+          <h2 id="amfi-title">Escaped By The Water, As free as</h2>
+          <p id="amfi-intro">Narrative photography project. <br>
+            Escaped By The Water, As Free As <br><br>
+            She slips out of one world and into another, moving through water as if it were a secret passage to a dream-like realm. It begins in a bathtub of a forgotten asylum, silent and frozen in time, heavy with the echoes of lives once lived. From there, she drifts into a dark forest pond, where shadows ripple and reality softens, bending around her like it is remembering her name. <br><br>
+            Along the way, she becomes distorted, lost between what she leaves behind and what she has yet to find. Confusion twists her and pulls at her, but she rises again, tethered to something deep inside herself. The journey bends, blurs, and unfolds until she emerges fully, a wide, imperfect smile on her face, a little wild, a little feral, but utterly free. <br><br>
+            A quiet celebration of escape, of reclaiming space, of being finally, completely alive.
+
+
+
+          </p>
+        </div>
+
+        <div id="amfi-carousel-wrap">
+          <div id="amfi-carousel">
+
+            <!-- poster slot (A3) — shown first -->
+            <div class="amfi-slide amfi-slide--poster">
+              <img src="images/amfi-poster.jpg" alt="Project poster">
+              <span class="amfi-slide-caption">Poster — A3</span>
+            </div>
+
+            <!-- 12 photo slots -->
+            <div class="amfi-slide"><img src="images/amfi-1.jpg" alt="AMFI photo 1"></div>
+            <div class="amfi-slide"><img src="images/amfi-2.jpg" alt="AMFI photo 2"></div>
+            <div class="amfi-slide"><img src="images/amfi-3.jpg" alt="AMFI photo 3"></div>
+            <div class="amfi-slide"><img src="images/amfi-4.jpg" alt="AMFI photo 4"></div>
+            <div class="amfi-slide"><img src="images/amfi-5.jpg" alt="AMFI photo 5"></div>
+            <div class="amfi-slide"><img src="images/amfi-6.jpg" alt="AMFI photo 6"></div>
+            <div class="amfi-slide"><img src="images/amfi-7.jpg" alt="AMFI photo 7"></div>
+            <div class="amfi-slide"><img src="images/amfi-8.jpg" alt="AMFI photo 8"></div>
+            <div class="amfi-slide"><img src="images/amfi-9.jpg" alt="AMFI photo 9"></div>
+            <div class="amfi-slide"><img src="images/amfi-10.jpg" alt="AMFI photo 10"></div>
+            <div class="amfi-slide"><img src="images/amfi-11.jpg" alt="AMFI photo 11"></div>
+            <div class="amfi-slide"><img src="images/amfi-12.jpg" alt="AMFI photo 12"></div>
+
+          </div>
+
+          <div id="amfi-controls">
+            <button class="amfi-btn" id="amfi-prev" aria-label="Previous">←</button>
+            <span id="amfi-counter">
+              <span id="amfi-current">1</span> / <span id="amfi-total">13</span>
+            </span>
+            <button class="amfi-btn" id="amfi-next" aria-label="Next">→</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- short film -->
+    <section id="film">
+      <div id="film-inner">
+        <div id="film-text">
+          <p id="film-label">Short Fashion Film — AMFI</p>
+          <h2 id="film-title">orchid<em>.</em></h2>
+          <p id="film-desc">A short film made during my previous minor. Replace this with a sentence or two about what the film is about, the concept, or what it meant to you.</p>
+        </div>
+        <div id="film-embed">
+          <iframe
+            src="https://www.youtube.com/embed/ZHl7tUSImuE?si=Pw1_M8GkPiA2RFc3"
+            title="Short film by Choice Johnson"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- analogue photography -->
+    <section id="photos">
+      <div id="photos-header">
+        <div id="photos-header-top">
+          <p id="photos-label">Photography</p>
+          <p id="photos-sub">Analogue</p>
+        </div>
+        <p class="photos-intro">I like taking photos ladida</p>
+      </div>
+
+      <div id="photo-table">
+        <div class="photo" data-rot="-3"><img src="images/photo-1.jpg" alt="Analogue photo"></div>
+        <div class="photo" data-rot="2"><img src="images/photo-2.jpg" alt="Analogue photo"></div>
+        <div class="photo" data-rot="-5"><img src="images/photo-3.jpg" alt="Analogue photo"></div>
+        <div class="photo" data-rot="4"><img src="images/photo-4.jpg" alt="Analogue photo"></div>
+        <div class="photo" data-rot="-2"><img src="images/photo-5.jpg" alt="Analogue photo"></div>
+        <div class="photo" data-rot="6"><img src="images/photo-6.jpg" alt="Analogue photo"></div>
+        <div class="photo" data-rot="-4"><img src="images/photo-7.jpg" alt="Analogue photo"></div>
+        <div class="photo" data-rot="3"><img src="images/photo-8.jpg" alt="Analogue photo"></div>
+        <div class="photo" data-rot="-1"><img src="images/photo-9.jpg" alt="Analogue photo"></div>
+        <div class="photo" data-rot="5"><img src="images/photo-10.jpg" alt="Analogue photo"></div>
+        <div class="photo" data-rot="-6"><img src="images/photo-11.jpg" alt="Analogue photo"></div>
+        <div class="photo" data-rot="2"><img src="images/photo-12.jpg" alt="Analogue photo"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script/visual.js"></script>
   <script src="script/palette.js"></script>
-
 </body>
 </html>
