@@ -110,12 +110,11 @@
   min-height: 900px;
 }
 
-/* each photo looks like a physical print with a white border */
 .photo {
   position: absolute;
   background: #fff;
-  padding: 10px 10px 28px;
-  box-shadow: 2px 4px 12px rgba(0,0,0,0.12);
+  /* padding: 10px 10px 28px;
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.12); */
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s, z-index 0s;
   z-index: 1;
@@ -133,7 +132,6 @@
   object-fit: cover;
 }
 
-/* lightbox overlay */
 #lightbox {
   display: none;
   position: fixed;
@@ -191,7 +189,6 @@
     padding: 48px 16px 80px;
   }
 
-  /* on mobile, stack photos in a simple column instead of scattered */
   #photo-table {
     position: static;
     min-height: unset;

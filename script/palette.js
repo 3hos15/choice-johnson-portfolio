@@ -45,3 +45,11 @@ document.querySelectorAll('.nav-link').forEach(link => {
     link.classList.add('nav-link--active');
   }
 });
+
+document.querySelectorAll('img').forEach((img, index) => {
+  if (index === 0) {
+    img.loading = 'eager';
+  } else {
+    img.loading = 'lazy';
+  }
+});

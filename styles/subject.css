@@ -246,6 +246,10 @@ MARK: NAV
   border: 1px solid var(--color-border-nav);
 }
 
+.subject-image a + a {
+  margin-top: 16px;
+}
+
 .subject-image img {
   display: block;
   width: 100%;
@@ -288,7 +292,13 @@ MARK: NAV
   animation-range: entry 0% entry 30%;
 }
 
+.fchyena-link {
+  text-decoration: underline;
+}
 
+.fchyena-link:hover {
+  opacity: 0.5;
+}
 
 #nav-links {
   display: none;
